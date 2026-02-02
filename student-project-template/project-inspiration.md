@@ -83,6 +83,18 @@
 
 ---
 
+## URLs analizadas (referencia)
+- https://ning-h.com/
+- https://www.olhalazarieva.com/
+- https://www.julesstudio.co/
+
+### Patrones transferibles (extraídos de las referencias)
+- Hero projects destacados: colocar 1-2 piezas grandes en la home que actúen como entrada visual principal — atraen la atención de reclutadores y permiten mostrar proceso + resultado.
+- Tarjetas enriquecidas con metadatos y CTA: cada tarjeta de galería muestra título, rol breve y 1–2 tags más un CTA "Ver caso"; facilita escaneo y filtrado sin perder contexto.
+- Galería progresiva (grid + slider): combinar un grid responsivo para escaneo rápido con un carrusel/slider para trabajos recientes o destacados que necesiten narrativa secuencial.
+
+---
+
 ## 💡 Project Examples by Type
 
 ### Portfolio Sites
