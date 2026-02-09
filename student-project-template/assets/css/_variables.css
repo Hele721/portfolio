@@ -63,8 +63,9 @@
 	--font-weight-bold: 700;
 
 	/* Font families */
-	--font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-	--font-family-heading: var(--font-family-base);
+	--font-family-base: "Zalando Sans", system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	--font-family-título: "Newsreader";
+	--font-family-heading: var(--font-family-título);
 	--font-family-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace;
 
 	/* ===== SPACING SCALE ===== */
@@ -108,7 +109,8 @@
 	--z-tooltip: 70;
 
 	/* ===== SCROLLYTELLING GRADIENTS ===== */
-	--gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	--gradient-hero: radial-gradient(75% 75% at 50% 50%, #09958FFF 32%, #CECCB0FF 97%);
+	/*linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
 	--gradient-chapter-1: linear-gradient(135deg, #2c3e50, #34495e);
 	--gradient-chapter-2: linear-gradient(135deg, #c0392b, #8e44ad);
 	--gradient-chapter-3: linear-gradient(135deg, #27ae60, #2ecc71);

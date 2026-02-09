@@ -87,6 +87,8 @@ Clean, editorial-focused portfolio with generous whitespace, clear typographic h
 
 <!-- What fonts/typeface approach will you use? -->
 
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
 ### Inspiration/References
 
 <!-- List 2-3 websites or designs that inspire your approach -->
