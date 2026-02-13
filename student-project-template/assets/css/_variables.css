@@ -24,6 +24,9 @@
 	--color-text-secondary: #334155;
 	--color-text-muted: #64748b;
 
+	/* White / on-light backgrounds */
+	--color-white: #ffffff;
+
 	/* Background colors */
 	--color-bg: #ffffff;
 	--color-bg-light: #f8fafc;
@@ -111,10 +114,9 @@
 	/* ===== SCROLLYTELLING GRADIENTS ===== */
 	--gradient-hero: radial-gradient(75% 75% at 50% 50%, #09958FFF 32%, #CECCB0FF 97%);
 	/*linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
-	--gradient-chapter-1: linear-gradient(135deg, #2c3e50, #34495e);
-	--gradient-chapter-2: linear-gradient(135deg, #c0392b, #8e44ad);
-	--gradient-chapter-3: linear-gradient(135deg, #27ae60, #2ecc71);
-
+	--gradient-chapter-1: linear-gradient(90deg, #00C39CFF 0%, #00C39CFF 0%, #9CA9FDFF 86%);
+	--gradient-chapter-2: linear-gradient(90deg, #9CA9FDFF 0%, #9CA9FDFF 0%, #FF7660FF 100%);
+	--gradient-chapter-3: linear-gradient(90deg, #FE9D53FF 24%, #008B99FF 100%);
 	/* ===== SCROLLYTELLING COLORS ===== */
 	--color-accent-blue: #3498db;
 	--color-accent-red: #e74c3c;

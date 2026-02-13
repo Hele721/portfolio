@@ -92,6 +92,159 @@
 	line-height: var(--line-height-relaxed);
 }
 
+/* Ensure readable white text where needed */
+.chapter-1 .text-large {
+	color: var(--color-white);
+}
+
+/* ===== ABOUT ROW: two columns (50% / 50%) ===== */
+.about-row {
+	display: flex;
+	gap: var(--space-2xl);
+	align-items: center;
+	margin-top: var(--space-md);
+}
+.about-row .col {
+	flex: 0 0 50%;
+	min-width: 0;
+}
+.about-row .col-left .text-large {
+	margin: 0;
+}
+.about-image {
+	width: 100%;
+	height: auto;
+	border-radius: var(--radius-lg);
+	object-fit: cover;
+	display: block;
+	box-shadow: var(--shadow-md);
+}
+
+/* Two images side-by-side inside a single column */
+.image-pair {
+	display: flex;
+	gap: var(--space-md);
+	align-items: center;
+}
+.image-pair .about-image {
+	flex: 1 1 50%;
+	width: auto; /* allow flex sizing */
+}
+
+@media (max-width: 768px) {
+	.image-pair {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.image-pair .about-image {
+		flex: 1 1 100%;
+	}
+}
+
+/* Centered card utilities */
+.centered-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+/* Make centered card a bit larger and more prominent */
+.centered-card {
+	padding: calc(var(--space-2xl) + var(--space-md));
+	max-width: min(900px, 100%);
+	width: 100%;
+	margin: 0 auto;
+}
+.centered-card .about-row {
+	justify-content: center;
+}
+.centered-card .about-row .col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.centered-card .about-row .col-left .text-large {
+	margin: 0 auto;
+	max-width: 95%;
+}
+.centered-card .image-pair {
+	justify-content: center;
+}
+.centered-card .image-pair .about-image {
+	flex: 1 1 50%;
+	max-width: 50%;
+}
+
+/* Layout: text 30% / images 70% inside centered-card */
+.centered-card .about-row .col-left {
+	flex: 0 0 30%;
+	max-width: 30%;
+}
+.centered-card .about-row .col-right {
+	flex: 0 0 70%;
+	max-width: 70%;
+}
+.centered-card .about-row .col-right .image-pair {
+	align-items: center;
+}
+.centered-card .about-row .col-right .image-pair .about-image {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+/* Make the descriptive paragraph inside this card smaller */
+.centered-card .about-row .col-left .text-large {
+	font-size: var(--font-size-sm);
+}
+
+/* Larger title for centered cards */
+.centered-card h4 {
+	font-size: var(--font-size-2xl);
+	font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 768px) {
+	.centered-card .about-row {
+		flex-direction: column;
+	}
+	.centered-card .image-pair .about-image {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+	.centered-card .about-row .col-left,
+	.centered-card .about-row .col-right {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+/* Stack specific cards vertically when wrapped in .stacked-list */
+.stacked-list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xl);
+}
+
+@media (min-width: 900px) {
+	.stacked-list {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+}
+
+/* Make anchor wrap fill the card and inherit styles */
+.card-link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+.card-link:focus-visible {
+	outline: 3px solid rgba(66,153,225,0.6);
+	outline-offset: 3px;
+}
+
 /* ===== CHAPTER THEMES ===== */
 .chapter-1 {
 	background: var(--gradient-chapter-1);
@@ -369,6 +522,15 @@
 @media (max-width: 768px) {
 	.parallax-section {
 		background-attachment: scroll;
+	}
+
+	/* Stack about-row columns on small screens */
+	.about-row {
+		flex-direction: column;
+	}
+
+	.about-row .col {
+		flex: 0 0 100%;
 	}
 
 	.timeline::before {
