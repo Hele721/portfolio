@@ -14,14 +14,14 @@
 
 	/* ===== COLOR SYSTEM ===== */
 	/* Primary brand colors */
-	--color-primary: #1d4ed8;
-	--color-primary-hover: #1e40af;
+	--color-primary: ##800020;
+	--color-primary-hover: ##800020;
 	--color-primary-light: #3b82f6;
 	--color-primary-dark: #1e3a8a;
 
 	/* Neutral colors for text and backgrounds */
-	--color-text-primary: #0f172a;
-	--color-text-secondary: #334155;
+	--color-text-primary: ##800020;
+	--color-text-secondary: ##800020;
 	--color-text-muted: #64748b;
 
 	/* White / on-light backgrounds */

@@ -9,28 +9,42 @@
 
 /* ===== HEADER & NAVIGATION ===== */
 header {
-	background-color: var(--color-bg-light);
-	padding: var(--space-lg) 0;
-	border-bottom: 1px solid var(--color-border-light);
+	background-color: #ffffff; /* color de la tira */
+	padding: 0; /* eliminar padding para barra muy fina */
+	min-height: 80px; /* barra más delgada */
+	height: 80px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 	position: sticky;
 	top: 0;
 	z-index: var(--z-sticky);
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(4px);
 }
 
 .dark-mode header {
-	background-color: rgba(30, 41, 59, 0.9);
+	background-color: rgba(255, 255, 255, 0.95);
 }
 
 header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 100%;
+}
+
+/* Mover la navegación ligeramente fuera del padding del contenedor hacia la derecha */
+header nav {
+	margin-right: calc(-1 * var(--container-padding) + 0.15rem);
+}
+
+/* Asegurar contraste: texto del header en blanco sobre burdeos */
+header .site-title,
+header nav a {
+	color: #800020;/* color de la tira */
 }
 
 nav ul {
 	display: flex;
-	gap: var(--space-lg);
+	gap: var(--space-sm);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -39,7 +53,7 @@ nav ul {
 nav a {
 	color: var(--color-text-primary);
 	font-weight: var(--font-weight-medium);
-	padding: var(--space-sm) var(--space-md);
+	padding: 0 var(--space-xs); /* padding horizontal mínimo */
 	border-radius: var(--radius-md);
 	transition: all var(--transition-fast);
 }
@@ -161,7 +175,43 @@ footer a:hover {
 
 .site-title {
 	margin: 0;
-	font-size: var(--font-size-2xl);
+	font-size: var(--font-size-2xl); /* nombre más grande */
+	line-height: 1;
+	font-weight: var(--font-weight-bold);
+	padding-left: 0; /* eliminar padding para dejar espacio al contenedor */
+	margin-left: -1rem; /* desplazar más a la izquierda */
+}
+
+/* H2 de secciones en rojo burdeos */
+.story-content h2,
+#projects {
+	color: #800020;
+}
+
+/* H1 del hero en rojo burdeos */
+.hero h1 {
+	color: #800020;
+}
+
+/* Parallax: h3 y párrafo grande en burdeos */
+.parallax-content h3,
+.parallax-content p.text-large {
+	color: #800020;
+}
+
+@media (max-width: 600px) {
+	header {
+		padding: 0;
+		min-height: 28px;
+		height: 28px;
+	}
+	.site-title {
+		font-size: var(--font-size-xl);
+		padding-left: 0;
+		margin-left: 0; /* cancelar el desplazamiento en móviles */
+	}
+	nav ul { gap: var(--space-xs); }
+	header nav { margin-right: 15px; }
 }
 
 .lead {
