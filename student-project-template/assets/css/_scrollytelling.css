@@ -12,25 +12,28 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--gradient-hero);
+	background: url(https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Mi%20pattern.webp);
+	/*opacity:0.9;*/
 	text-align: center;
 	padding: var(--space-2xl);
 }
 
 .hero h1 {
 	font-size: var(--font-size-4xl);
-	color: #800020;
+	color:#800020;
+	background: #ffffff;
 	margin-bottom: var(--space-md);
 	font-weight: var(--font-weight-bold);
-	opacity: 0;
+	opacity: 1.5;
 	transform: translateY(30px);
 	animation: fadeInUp 1s ease forwards;
 	font-family: var(--font-family-título);
+	text-align: left;
 }
 
 .hero p {
 	font-size: var(--font-size-lg);
-	color: #800020(255, 255, 255, 0.9);
+	color: rgba(128, 0, 32, 0.9); /* #800020 with 90% opacity */
 	max-width: 600px;
 	margin: 0 auto var(--space-xl);
 	opacity: 0;
@@ -47,6 +50,7 @@
 	background: #800020; /* burdeos sólido */
 	animation: fadeInUp 1s ease 0.6s forwards, bounce 2s ease-in-out 1.6s infinite;
 	transition: background 200ms ease, opacity 200ms ease, transform 200ms ease;
+	-ms-text-underline-position: under;
 }
 
 /* ===== KEYFRAME ANIMATIONS ===== */
@@ -475,20 +479,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--gradient-hero);
+	background-image: radial-gradient(75% 75% at 50% 50%, #A1A1A1FF 0%, #A1A1A1FF 97%);
 	text-align: center;
 	padding: var(--space-2xl);
 }
 
 .final-content h2 {
 	font-size: var(--font-size-4xl);
-	color: white;
+	color: #800020;
 	margin-bottom: var(--space-md);
 }
 
 .final-content p {
 	font-size: var(--font-size-lg);
-	color: rgba(255, 255, 255, 0.9);
+	color: #800020;
 	max-width: 600px;
 	margin: 0 auto var(--space-xl);
 }

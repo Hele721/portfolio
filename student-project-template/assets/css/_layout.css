@@ -25,8 +25,8 @@
 }
 
 main {
-	min-height: 80vh;
-	padding: var(--space-3xl) 0;
+	min-height: 0vh;
+	padding: var(--space-s) 0;
 }
 
 /* ===== GRID LAYOUTS ===== */

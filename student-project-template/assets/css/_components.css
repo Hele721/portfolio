@@ -40,6 +40,7 @@ header nav {
 header .site-title,
 header nav a {
 	color: #800020;/* color de la tira */
+	text-align: left;
 }
 
 nav ul {
