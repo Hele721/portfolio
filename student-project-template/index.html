@@ -13,6 +13,37 @@
 		<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./assets/css/style.css" />
+		<style>
+			/* Footer Styles */
+			footer {
+				background: #f8f9fa;
+				border-top: 1px solid #800020;
+				padding: 2rem 1rem;
+				text-align: center;
+				font-size: 0.9rem;
+				margin-top: 3rem;
+			}
+			.footer-row {
+				margin: 0.5rem 0;
+			}
+				
+			.footer-row:first-child {
+				color:#800020;
+				font-weight: 400;
+			}
+				
+			.github-link {
+				color: #800020;
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s ease;
+			}
+				
+			.github-link:hover {
+				color: #800020;
+				text-decoration: underline;
+			}		
+		</style>
 	</head>
 	<body>
 		<a href="#main" class="skip-link">Saltar al contenido</a>
@@ -284,7 +315,12 @@
 		<div class="info-overlay">
 			<div>Progreso: <strong><span id="progress">0</span>%</strong></div>
 		</div>
-
+		<footer>
+					<div class="footer-row">©️ 2026 Helena Clerias López. Todos los derechos reservados.</div>
+					<div class="footer-row">
+						<a href="https://github.com/Hele721/portfolio.git" target="_blank" class="github-link" alt="Ver proyecto en Github">Ver proyecto en Github</a>
+					</div>
+		</footer>
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
