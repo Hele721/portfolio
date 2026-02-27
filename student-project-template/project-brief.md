@@ -1,9 +1,9 @@
 # Project Brief
 
-**Student:** [Your Name]  
-**Handle:** @[your-github-username]  
-**Course:** Web Design 2025 · Fall  
-**Date:** [Fill in date - Week 2]
+**Student:** Helena Clerias 
+**Handle:** @[Hele721]  
+**Course:** Master de iLUSTRACIÓN 2026 · Fall  
+**Date:** [27/02]
 
 ---
 
@@ -82,6 +82,9 @@ Clean, editorial-focused portfolio with generous whitespace, clear typographic h
 ### Color Palette
 
 <!-- List your main colors -->
+- Color primario: Rojo Burdeos
+- Colro secundario: Gris
+- Color terciareio: Blanco
 
 ### Typography
 
