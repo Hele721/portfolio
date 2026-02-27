@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - Portfolio Editorial</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: clamp(4rem, 8vw, 8rem);
+            font-weight: 800;
+            color: #800020;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-message {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: #800020;
+            margin: 1rem 0 2rem 0;
+            font-weight: 400;
+        }
+        
+        .error-description {
+            color: #800020;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .redirect-notice {
+            background: #800020;
+            border: 1px solid #800020;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            color: #800020;
+        }
+        
+        .countdown {
+            font-weight: 600;
+            color: #800020;
+        }
+        
+        .btn-home {
+            display: inline-block;
+            background: #800020;
+            color: white;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-home:hover {
+            background: #800020;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-message">Página no encontrada</h2>
+        <p class="error-description">
+            Lo sentimos, la página que buscas no existe o ha sido movida.
+        </p>
+        
+        <div class="redirect-notice">
+            <p>Serás redirigido automáticamente al inicio en <span class="countdown" id="countdown">5</span> segundos.</p>
+        </div>
+        
+        <a href="index.html" class="btn-home">Ir al inicio ahora</a>
+    </div>
+
+    <script>
+        // Countdown and redirect functionality
+        let timeLeft = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+        
+        // Optional: Redirect immediately if user clicks anywhere
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.btn-home')) {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>

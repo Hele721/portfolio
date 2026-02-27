@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Portfolio de ilustración - WEB ATELIER (UDIT) - Historias que se despliegan mientras scrolleas" />
+		<meta name="author" content="Helena Clerias" />
+		<title>Helena Clerias — Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<style>
+			/* Footer Styles */
+			footer {
+				background: #f8f9fa;
+				border-top: 1px solid #800020;
+				padding: 2rem 1rem;
+				text-align: center;
+				font-size: 0.9rem;
+				margin-top: 3rem;
+			}
+			.footer-row {
+				margin: 0.5rem 0;
+			}
+				
+			.footer-row:first-child {
+				color:#800020;
+				font-weight: 400;
+			}
+				
+			.github-link {
+				color: #800020;
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s ease;
+			}
+				
+			.github-link:hover {
+				color: #800020;
+				text-decoration: underline;
+			}		
+		</style>
+	</head>
+	<body>
+		<a href="#main" class="skip-link">Saltar al contenido</a>
+
+		<header role="banner">
+			<div class="container header-content">
+				<h1 class="site-title">Helena Clerias</h1>
+				<nav aria-label="Principal">
+					<ul>
+						<li><a href="#main">Sobre mi</a></li>
+						<li><a href="#projects">Proyectos</a></li>
+						<li><a href="#contact">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- tu "mantra" + Dibujo representativo tuyo -->
+		<div class="hero">
+			<div>
+				<h1> Ilustrar es interpretar; diseñar es ordenar el mundo</h1>
+				<!--<p>Diseñadora gráfica e Ilustradora<br />Portfolio de Ilustración</p> -->
+				<div class="scroll-indicator">↓ Scroll para descubrir más ↓</div>
+			</div>
+		</div>
+
+		<!-- Main Content -->
+		<main id="main">
+			<!-- Chapter 1: About Me -->
+			<section class="story-section chapter-1" data-observe>
+				<div class="story-content">
+					<h2>Sobre Mí</h2>
+					<div class="about-row">
+						<div class="col col-left">
+							<p class="text-large">
+								Soy Diseñadora Gráfica especializada en Diseño Editorial con un master en ilustración.Mi trabajo explora de todo tipo, combinando
+								técnicas tradicionales con herramientas digitales.
+							<p class="text-large">
+								Creo que cada ilustración cuenta una historia. Mi proceso comienza con la investigación y exploración conceptual,
+								seguido de bocetos y refinamiento iterativo hasta lograr la pieza final.
+							</p>
+						</div>
+						<div class="col col-right">
+							<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/PERFIL.webp" alt="Foto de perfil" class="about-image" />
+						</div>
+					</div>
+
+					<!--  <div class="stat-display">
+						<div class="stat-item">
+							<span class="stat-number">4+</span>
+							<span class="stat-label">Años de Formación</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-number">50+</span>
+							<span class="stat-label">Proyectos Completados</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-number">10+</span>
+							<span class="stat-label">Clientes Satisfechos</span>
+						</div>
+					</div>-->
+
+					
+					</p>
+				</div>
+			</section>
+
+			<!-- Parallax Section -->
+			<div class="parallax-section">
+				<div class="parallax-content">
+					<h3>Diseñadora Gráfica e Ilustradora</h3>
+					<p class="text-large">Diseño editorial e ilustración con enfoque conceptual y sensibilidad narrativa</p>
+				</div>
+			</div>
+
+			<!-- Chapter 2: My Work 
+			<section class="story-section chapter-2" data-observe>
+				<div class="story-content">
+					<h2>Mi Trabajo</h2>
+					<p class="text-large mb-lg">Me especializo en varias áreas de ilustración:</p>
+
+					<div class="interactive-cards">
+						<div class="stacked-list">
+							<a href="./revista%20literarias/index.html" class="card-link">
+							<div class="card centered-card">
+							<h4>Editorial</h4>
+							<p>Ilustraciones para revistas, libros y publicaciones digitales que capturan la esencia de cada historia.</p>
+						</div>
+						<div class="card">
+							<h4>Branding</h4>
+							<p>Identidades visuales únicas que ayudan a las marcas a conectar emocionalmente con su audiencia.</p>
+						</div>
+						<div class="card">
+							<h4>Digital</h4>
+							<p>Arte conceptual y diseño de personajes para videojuegos, animación y medios interactivos.</p>
+						</div>
+					</div>
+
+					<p class="mt-lg">Cada proyecto es una oportunidad para explorar nuevas técnicas y estilos visuales.</p>
+				</div>
+			</section>-->
+
+			<!-- Timeline Section 
+			<section class="story-section chapter-1" data-observe>
+				<div class="story-content">
+					<h2>Mi Proceso Creativo</h2>
+					<p class="text-large mb-lg">Así es como transformo ideas en ilustraciones:</p>
+
+					<div class="timeline">
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-content">
+								<h4>1. Investigación y Concepto</h4>
+								<p>Exploro referencias, creo moodboards y desarrollo la dirección conceptual del proyecto.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-content">
+								<h4>2. Bocetos y Exploración</h4>
+								<p>Genero múltiples bocetos rápidos para explorar composiciones y estilos diferentes.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-content">
+								<h4>3. Refinamiento y Color</h4>
+								<p>Desarrollo el boceto seleccionado, añado color y ajusto detalles hasta la pieza final.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>-->
+			<!-- Timeline Section -->
+			<section class="story-section chapter-1" data-observe>
+				<div class="story-content">
+					<h2 id="projects">Proyectos</h2>
+					<p class="text-large mb-lg">Aquí hay algunos de mis proyectos más destacados:</p>
+					
+					<div class="interactive-cards">
+						<div class="stacked-list">
+						<div class="card centered-card">
+							<!--<a href="./proyecto-1/index.html">-->
+							<h3>Revistas Literarias</h3>
+								<div class="about-row">
+									<div class="col col-left">
+										<p class="text-large">
+											Revista literaria en donde podemos ver los desde los libros más leídos del mes hasta los libros en tendencia. Revistas hechas en InDesign. Dos colecciones.
+										</p>
+									</div>
+									<div class="col col-right">
+										<div class="image-pair">
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/iamgen_2.webp?updatedAt=1770659231646" alt="Revista literaria 1" class="about-image" />
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Imagen_1.webp?updatedAt=1770659231552" alt="Revista literaria 2" class="about-image" />
+										</div>
+									</div>
+								</div>
+							</a>							
+                     		</div>
+                     		<div class="card centered-card">
+							<h3>Libro Ilustrado</h3>
+								<div class="about-row">
+									<div class="col col-left">
+										<p class="text-large">
+											Trabajo de Fin de Grado. Libro ilustrado de 120 páginas, tapa dura y diversidad de papeles. Historia propia con Ilustraciones hechas en Procreate. 
+											</p>
+									</div>
+									<div class="col col-right">
+										<div class="image-pair">
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/imagen_3.webp?updatedAt=1770659692534" alt="Libro ilustrado 1" class="about-image" />
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Imagen_4.webp?updatedAt=1770659700893" alt="Libro ilustrado 2" class="about-image" />
+				                    		</div>
+									</div>
+								</div>
+                     		</div>
+                     		<div class="card centered-card">
+							<h3>Portadas Ilustradas</h3>
+								<div class="about-row">
+									<div class="col col-left">
+										<p class="text-large">
+											Portadas de libro a base de Collages. 
+											</p>
+									</div>
+									<div class="col col-right">
+										<div class="image-pair">
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/tan%20poca%20vida.webp" alt="Portada ilustrada 1" class="about-image" />
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Gambito%20de%20dama.webp" alt="Portada ilustrada 2" class="about-image" />
+											</div>
+									</div>
+								</div>
+                     		</div>
+                     		<div class="card centered-card">
+							<h3>Libro Ilustrado analógico</h3>
+								<div class="about-row">
+									<div class="col col-left">
+										<p class="text-large">
+											Libro ilustrado. Libro del escritor Isak Dinesen, El festín de Babbete. Ilustraciones en acuarela, retocadas en Photoshop. 
+											</p>
+									</div>
+									<div class="col col-right">
+										<div class="image-pair">
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Captura%20de%20pantalla%202026-02-13%20a%20las%2021.34.01.webp" alt="Portada ilustrada 1" class="about-image" />
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Captura%20de%20pantalla%202026-02-13%20a%20las%2021.34.17.webp" alt="Portada ilustrada 2" class="about-image" />
+				                    		</div>
+									</div>
+								</div>
+                     		</div>
+							<div class="card centered-card">
+							<h3>Menú Ilustrado</h3>
+								<div class="about-row">
+									<div class="col col-left">
+										<p class="text-large">
+											Menú ilustrado. Restaurante de lujo de sushi con una estética Art Déco. Ilustraciones hechas en Illustrator.
+											</p>
+									</div>
+									<div class="col col-right">
+										<div class="image-pair">
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Captura%20de%20pantalla%202026-02-25%20a%20las%2021.00.05.webp" alt="Menú ilustrado 1" class="about-image" />
+											<img src="https://ik.imagekit.io/helena/PORTFOLIO/IMAGES/Captura%20de%20pantalla%202026-02-25%20a%20las%2021.00.13.webp" alt="Menú ilustrado 2" class="about-image" />
+				                    		</div>
+									</div>
+								</div>
+                     		</div>
+					</div>
+				</div>
+			</section>
+			<!-- Chapter 3: Skills & Tools
+			<section class="story-section chapter-3" data-observe>
+				<div class="story-content">
+					<h2>Herramientas y Técnicas</h2>
+					<p class="text-large mb-lg">Combino herramientas digitales y análogas para crear mi trabajo:</p>
+
+					<div class="interactive-cards">
+						<div class="card">
+							<h4>Digital</h4>
+							<p>• Procreate<br />• Adobe Photoshop<br />• Illustrator<br />• After Effects</p>
+						</div>
+						<div class="card">
+							<h4>Tradicional</h4>
+							<p>• Acuarela<br />• Tinta y plumilla<br />• Lápices de color<br />• Collage mixto</p>
+						</div>
+						<div class="card">
+							<h4>Especialidades</h4>
+							<p>• Character design<br />• Concept art<br />• Storytelling visual<br />• Ilustración editorial</p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<!-- Final CTA Section -->
+			<section class="final-section">
+				<div class="final-content">
+					<h2 id="contact">¿Trabajamos Juntos?</h2>
+					<p>
+						Si quieres trabajar conmigo, por favor no dudes en contactarme. Gracias por visitar mi portfolio. 
+					</p>
+					<a href="mailto:heleclerias@gmail.com" class="cta-button">Email</a>
+					<a href="https://www.linkedin.com/in/helena-clerias-39105b2b7/" class="cta-button">Linkedin</a>
+
+					<!--<p class="mt-xl text-muted">
+						<strong>Reflexión:</strong> Este portfolio usa scrollytelling para contar mi historia de forma progresiva. Cada
+						sección se revela mientras navegas, creando una experiencia más inmersiva que una página tradicional.
+					</p>-->
+				</div>
+			</section>
+		</main>
+
+		<!-- Scroll Progress Indicator -->
+		<div class="info-overlay">
+			<div>Progreso: <strong><span id="progress">0</span>%</strong></div>
+		</div>
+		<footer>
+					<div class="footer-row">©️ 2026 Helena Clerias López. Todos los derechos reservados.</div>
+					<div class="footer-row">
+						<a href="https://github.com/Hele721/portfolio.git" target="_blank" class="github-link" alt="Ver proyecto en Github">Ver proyecto en Github</a>
+					</div>
+		</footer>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
